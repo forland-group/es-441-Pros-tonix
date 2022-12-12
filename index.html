@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>PROS TONIX</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="css/app.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/bs.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/index.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/orderform.css" media="all" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body class="dark-blue body-white-back is-desktop" style="overflow: visible; margin-right: 0px;">
+
+<div class="content-wrapper">
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#order_form"><button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></a><a class="navbar-title to_form" href="#scroll_element">
+      <div class="navbar-title__bg"></div><span class="navbar-title__hashtag lt0">#NOTICIAS</span></a><a class="navbar-rss hidden-xs hidden-sm to_form" href="#scroll_element"><svg height="22" viewBox="880 78 22 22" width="22">
+      <defs>
+        <rect height="22" id="a" rx="2" width="22"></rect>
+        <mask fill="#fff" height="22" id="b" width="22" x="0" y="0"></mask>
+      </defs>
+      <g fill="none" fill-rule="evenodd" transform="translate(880 78)">
+        <g fill="#FFF">
+          <path d="M7.74 16c0 1.022-.836 1.85-1.87 1.85C4.84 17.85 4 17.02 4 16s.838-1.846 1.87-1.846c1.034 0 1.87.827 1.87 1.847"></path>
+          <path d="M4 8.694v2.555s6.28.17 6.474 6.6h2.765S13.563 9.114 4 8.692"></path>
+          <path d="M4 4v2.603s10.216-.16 11.354 11.246h2.57S18.217 4.77 4 4"></path>
+        </g>
+        <use mask="url(#b)" stroke="#FFF" stroke-width="2"></use>
+      </g></svg></a><a class="gradient-navbar visible-xs visible-sm to_form" href="#scroll_element"></a>
+      <ul class="navbar-menu">
+        <li class="navbar-menu-item dropdown" style="display: list-item; order: 4;">
+          <a class="navbar-menu-toggle to_form lt1" href="#scroll_element">MÁS</a>
+        </li>
+        <li class="navbar-menu-item">
+          <a class="to_form lt2" href="#scroll_element">#ALREDEDOR DEL MUNDO</a>
+        </li>
+        <li class="navbar-menu-item">
+          <a class="to_form lt3" href="#scroll_element">#INCIDENTES</a>
+        </li>
+        <li class="navbar-menu-item">
+          <a class="to_form lt4" href="#scroll_element">#PAÍS</a>
+        </li>
+        <li class="navbar-menu-item">
+          <a class="to_form lt5" href="#scroll_element">#TENDENCIAS</a>
+        </li>
+        <li class="navbar-menu-item">
+          <a class="to_form lt6" href="#scroll_element">#POLÍTICA</a>
+        </li>
+        <li class="navbar-menu-item">
+          <a class="to_form lt7" href="#scroll_element">#ACTUAL</a>
+        </li>
+      </ul>
+      <div class="navbar-right">
+        <a class="button-text button-text-stream to_form lt8" href="#scroll_element">ONLINE</a><a class="button-text button-text-mylife to_form lt9" href="#scroll_element">MI VIDA</a><a class="to_form" href="#scroll_element"><span class="button-user-container"><button class="button button-user"><span class="button-user-container"><span class="button-user-container"><span class="button-user-container"><span class="button-user-container"><span class="button-user-container"><span class="button-user-container"></span></span></span></span></span></span></button></span></a><a class="to_form" href="#scroll_element"><span class="button-notification-container"></span></a><a class="to_form" href="#scroll_element"><button class="button button-search"></button></a>
+      </div>
+      <div class="search-container"></div>
+    </div>
+  </nav>
+  <div class="notification-message-list-container"></div>
+  <div class="title-bar title-bar_post">
+    <div class="title-bar__container">
+      <div class="social-share" data-action="Big buttons Float">
+        <div class="social-share__icons">
+          <a class="social-share__icon social-share__icon_small social-share__icon_vk js-vk to_form" href="#scroll_element"><svg height="12" viewBox="0 0 22 12" width="22">
+          <path d="M10.764 11.94h1.315s.397-.042.6-.251c.187-.192.18-.552.18-.552s-.025-1.685.794-1.934c.807-.245 1.844 1.629 2.942 2.35.832.545 1.463.425 1.463.425l2.938-.039s1.537-.09.808-1.244c-.06-.095-.425-.855-2.184-2.415-1.843-1.633-1.596-1.37.623-4.195 1.351-1.72 1.892-2.771 1.722-3.22-.16-.43-1.154-.316-1.154-.316l-3.308.02s-.246-.033-.427.071c-.178.102-.292.34-.292.34s-.524 1.33-1.222 2.463C14.09 5.833 13.5 5.96 13.26 5.81c-.56-.346-.42-1.388-.42-2.13 0-2.315.368-3.28-.716-3.531-.36-.082-.624-.137-1.544-.146C9.4-.01 8.4.006 7.835.27c-.377.176-.668.568-.49.59.218.029.713.128.976.47.339.44.327 1.43.327 1.43s.195 2.725-.455 3.064c-.446.232-1.057-.242-2.371-2.41-.673-1.11-1.18-2.338-1.18-2.338S4.542.848 4.368.725C4.157.576 3.86.529 3.86.529L.717.549S.245.562.072.757c-.155.175-.012.536-.012.536s2.46 5.5 5.247 8.271c2.556 2.542 5.457 2.375 5.457 2.375" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_tw js-tw to_form" href="#scroll_element"><svg height="15" viewBox="0 0 18 15" width="18">
+          <path d="M0 12.616a10.657 10.657 0 0 0 5.661 1.615c6.793 0 10.507-5.476 10.507-10.223 0-.156-.003-.31-.01-.464A7.38 7.38 0 0 0 18 1.684a7.461 7.461 0 0 1-2.12.564A3.621 3.621 0 0 0 17.503.262c-.713.411-1.505.71-2.345.871A3.739 3.739 0 0 0 12.462 0C10.422 0 8.77 1.607 8.77 3.59c0 .283.033.556.096.82A10.578 10.578 0 0 1 1.254.656a3.506 3.506 0 0 0-.5 1.807c0 1.246.65 2.346 1.642 2.99a3.731 3.731 0 0 1-1.673-.45v.046c0 1.74 1.274 3.193 2.962 3.523a3.756 3.756 0 0 1-.972.126c-.239 0-.47-.022-.695-.064.469 1.428 1.833 2.467 3.449 2.494A7.531 7.531 0 0 1 .88 12.665c-.298 0-.591-.014-.881-.049" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_fb js-fb to_form" href="#scroll_element"><svg height="16" viewBox="0 0 8 16" width="8">
+          <path d="M5.937 2.752h1.891V.01L5.223 0c-2.893 0-3.55 2.047-3.55 3.353v1.829H0v2.824h1.673V16H5.19V8.006h2.375l.308-2.824H5.19v-1.66c0-.624.44-.77.747-.77" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_gp js-gp to_form" href="#scroll_element"><svg height="14" viewBox="0 0 21 14" width="21">
+          <path d="M6.816.006C8.5-.071 10.08.646 11.37 1.655a24.11 24.11 0 0 1-1.728 1.754C8.091 2.36 5.89 2.06 4.34 3.272c-2.217 1.503-2.317 5.05-.186 6.668 2.073 1.843 5.991.928 6.564-1.895-1.298-.02-2.6 0-3.899-.042-.003-.76-.006-1.518-.003-2.278 2.17-.006 4.341-.01 6.516.007.13 1.786-.11 3.688-1.23 5.164-1.696 2.34-5.1 3.022-7.756 2.02C1.681 11.921-.207 9.161.018 6.348.077 2.905 3.305-.11 6.816.006zm10.375 3.812h1.893c.004.634.007 1.27.014 1.903.632.007 1.27.007 1.902.013v1.893l-1.902.016c-.007.636-.01 1.27-.014 1.902h-1.896c-.006-.632-.006-1.266-.013-1.899l-1.902-.02V5.735c.633-.006 1.266-.01 1.902-.013.004-.636.01-1.27.016-1.903z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_mail js-mail to_form" href="#scroll_element"><svg height="16" viewBox="0 0 17 16" width="17">
+          <path d="M8.205 3.322c1.3 0 2.521.563 3.418 1.445v.003c0-.423.29-.742.694-.742l.101-.001c.631 0 .76.586.76.771l.004 6.584c-.045.431.454.653.73.377 1.077-1.086 2.366-5.585-.67-8.192-2.831-2.43-6.629-2.03-8.649-.664-2.146 1.453-3.52 4.668-2.185 7.688 1.455 3.294 5.617 4.276 8.091 3.296 1.253-.496 1.832 1.165.53 1.708-1.965.822-7.438.74-9.994-3.605C-.692 9.057-.6 3.896 3.98 1.222c3.505-2.046 8.125-1.48 10.91 1.374 2.913 2.985 2.743 8.572-.097 10.745-1.288.986-3.199.025-3.187-1.413l-.013-.47a4.827 4.827 0 0 1-3.388 1.381c-2.566 0-4.825-2.215-4.825-4.733 0-2.543 2.259-4.784 4.825-4.784zm3.231 4.602C11.34 6.08 9.944 4.97 8.26 4.97h-.063c-1.945 0-3.023 1.5-3.023 3.204 0 1.908 1.305 3.113 3.015 3.113 1.907 0 3.162-1.37 3.252-2.992l-.004-.372z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_viber js-viber to_form" href="#scroll_element"><svg height="21" viewBox="0 0 21 21" width="21">
+          <path d="M18.639 14.904c-.628-.506-1.3-.96-1.96-1.423-1.318-.926-2.523-.997-3.506.491-.552.836-1.325.873-2.133.506-2.228-1.01-3.949-2.567-4.956-4.831-.446-1.002-.44-1.9.603-2.609.552-.375 1.108-.818 1.064-1.637C7.693 4.334 5.1.765 4.077.39 3.653.233 3.23.243 2.8.388.4 1.195-.594 3.169.358 5.507c2.84 6.974 7.84 11.829 14.721 14.792.392.169.828.236 1.049.297 1.567.015 3.402-1.494 3.932-2.992.51-1.441-.568-2.013-1.421-2.7zm-7.716-13.8c-.417-.064-1.052.026-1.02-.525.046-.817.8-.513 1.165-.565 4.833.163 8.994 4.587 8.935 9.359-.006.468.162 1.162-.536 1.149-.668-.013-.493-.717-.553-1.185-.64-5.067-2.96-7.46-7.991-8.233zm.984 1.39c3.104.372 5.64 3.065 5.615 6.024-.047.35.157.95-.409 1.036-.764.116-.615-.583-.69-1.033-.511-3.082-1.593-4.213-4.7-4.907-.458-.102-1.17-.03-1.052-.736.113-.671.752-.443 1.236-.385zm.285 2.419c1.377-.034 2.992 1.616 2.969 3.044.014.39-.028.802-.49.857-.333.04-.552-.24-.586-.585-.128-1.272-.798-2.023-2.073-2.228-.382-.061-.757-.184-.579-.7.12-.345.436-.38.76-.388z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_telegram js-telegram to_form" href="#scroll_element"><svg height="17" viewBox="0 0 21 17" width="21">
+          <path d="M10.873 13.323c-.784.757-1.56 1.501-2.329 2.252-.268.262-.57.407-.956.387-.263-.014-.41-.13-.49-.378-.589-1.814-1.187-3.626-1.773-5.44a.425.425 0 0 0-.322-.317A417.257 417.257 0 0 1 .85 8.541a2.37 2.37 0 0 1-.59-.265c-.309-.203-.353-.527-.07-.762.26-.216.57-.397.886-.522C2.828 6.304 4.59 5.638 6.35 4.964L19.039.101c.812-.311 1.442.12 1.366.988-.05.572-.2 1.137-.32 1.702-.938 4.398-1.88 8.794-2.82 13.191l-.003.026c-.23 1.006-.966 1.28-1.806.668-1.457-1.065-2.91-2.134-4.366-3.201-.068-.05-.14-.098-.217-.152zm-3.22 1.385c.023-.103.038-.151.043-.2.092-.989.189-1.977.27-2.967a.732.732 0 0 1 .256-.534c2.208-1.968 4.41-3.943 6.613-5.917.626-.561 1.256-1.12 1.876-1.688.065-.06.08-.174.117-.263-.095-.027-.203-.095-.285-.072-.189.052-.38.127-.545.23C12.722 5.343 9.45 7.395 6.175 9.44c-.167.104-.214.19-.147.389.518 1.547 1.022 3.098 1.531 4.648.02.061.048.12.094.23z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_whatsapp js-whatsapp to_form" href="#scroll_element"><svg height="22" viewBox="0 0 22 22" width="22">
+          <path d="M7.926 5.587c-.213-.51-.375-.53-.698-.543a6.234 6.234 0 0 0-.369-.013c-.42 0-.86.123-1.125.395-.323.33-1.125 1.1-1.125 2.677 0 1.578 1.15 3.104 1.306 3.318.162.213 2.244 3.498 5.476 4.837 2.528 1.048 3.278.95 3.853.828.84-.181 1.894-.802 2.16-1.552.265-.75.265-1.39.187-1.527-.078-.135-.291-.213-.614-.375-.323-.161-1.894-.937-2.192-1.04-.29-.11-.569-.072-.788.239-.31.433-.614.873-.86 1.138-.194.207-.511.233-.776.123-.356-.149-1.351-.498-2.58-1.591-.95-.847-1.596-1.901-1.784-2.218-.187-.323-.02-.511.13-.685.161-.201.316-.343.478-.53.161-.188.252-.285.355-.505.11-.214.033-.434-.045-.595-.078-.162-.724-1.74-.99-2.38zM10.996 0C4.934 0 0 4.934 0 11c0 2.405.776 4.636 2.095 6.447L.724 21.534l4.228-1.351A10.913 10.913 0 0 0 11.003 22C17.067 22 22 17.066 22 11S17.067 0 11.003 0h-.006z" fill="#FFF" fill-rule="evenodd"></path></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="post-page" data-offset="timestamp">
+  <div class="post-page-container">
+    <article class="post-page-item">
+      <div itemprop="publisher"></div>
+      <div class="c-main">
+        <header class="o-jumbotron c-entry c-entry-lg c-entry-inverse u-pa-0">
+          <div class="c-port js-port-back">
+            <div class="c-port-back">
+              <div class="u-pos-r">
+                <div class="c-post-img-wrap has-pseudo-bg"><img class="c-post-img u-blur" height="530" src="img/main_picture_01.jpg" width="1340"></div>
+                <div class="c-post-meta">
+                  <img class="c-post-img-sleaze main-picture" height="210" src="img/main_picture_02.jpg" width="315">
+                  <h1 class="p-name c-post-title u-uppercase js-si-title dec 0 lt10"><font color="black">ÚLTIMAS NOTICIAS:</font><br>MILES DE PERSONAS EN ESPAÑA SUFREN DE PROSTATITIS Y SUS COMPLICACIONES TODOS LOS DÍAS. ¿ALGUIEN PUEDE SALVARLOS?<br></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="o-wrap u-pr-0">
+            <div class="o-jumbotron c-bar c-post-info u-mr-0 js-switcher-wrap">
+              <div class="c-bar-left">
+                <div class="c-bar-unit">
+                  <div class="p-category c-post-tag u-text-lady u-uppercase 1 lt11">NOTICIAS INTERNACIONALES</div>
+                </div>
+                <div class="c-bar-unit">
+                  <ul class="c-post-stats">
+                    <li class="js-comments-count"></li>
+                    <li><span class="text-hide">Número de visualizaciones</span><span class="i-ii i-view-light" role="presentation"></span>62168620846212262156</li>
+                  </ul>
+                </div>
+              </div><!-- Просмотры в социальных сетях -->
+              <div class="c-bar-right">
+                <div class="c-bar-unit">
+                  <ul class="c-social-list pull-left c-switcher-box js-switcher-box">
+                    <li>
+                      <a class="to_form" href="#scroll_element"><span class="text-hide 2 lt12">Facebook</span><svg class="i-svg i-fb" height="24" viewBox="0 0 24 24" width="24">
+                      <path d="M21.8,0H2.2C1,0,0,1,0,2.2v19.6C0,23,1,24,2.2,24H12V14H9v-3h3V8c0-2.5,1-4,4-4h3v3h-1.3 C16.8,7,16,7.8,16,8.7V11h4l-0.5,3H16v10h5.8c1.2,0,2.2-1,2.2-2.2V2.2C24,1,23,0,21.8,0z"></path></svg><span class="o-btn-text">233197227285</span></a>
+                    </li>
+                    <li>
+                      <a class="to_form" href="#scroll_element"><span class="text-hide 3 lt13">Twitter</span><svg class="i-svg i-tw" height="25" viewBox="0 0 13.4 11.7" width="25">
+                      <path d="M13.4,1.4c-0.5,0.2-1,0.4-1.6,0.5c0.6-0.4,1-0.9,1.2-1.6c-0.5,0.3-1.1,0.6-1.7,0.7C10.8,0.4,10.1,0,9.3,0 C7.8,0,6.5,1.3,6.5,3c0,0.2,0,0.5,0.1,0.7C4.3,3.5,2.3,2.3,0.9,0.5C0.7,1,0.6,1.5,0.6,2c0,1,0.5,1.9,1.2,2.5c-0.5,0-0.9-0.1-1.2-0.4 c0,0,0,0,0,0c0,1.4,0.9,2.6,2.2,2.9C2.5,7.1,2.3,7.1,2,7.1c-0.2,0-0.3,0-0.5-0.1c0.3,1.2,1.4,2,2.6,2.1C3.1,9.9,2,10.4,0.7,10.4 c-0.2,0-0.4,0-0.7,0c1.2,0.8,2.7,1.3,4.2,1.3c5,0,7.8-4.5,7.8-8.4c0-0.1,0-0.3,0-0.4C12.5,2.5,13,2,13.4,1.4z"></path></svg><span class="o-btn-text">77717269</span></a>
+                    </li>
+                    <li>
+                      <a class="to_form" href="#scroll_element"><span class="text-hide 4 lt14">Telegram</span><svg class="i-svg i-tlg" height="24" viewBox="0 0 24 24" width="24">
+                      <path d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"></path></svg><span class="o-btn-text">277247264287</span></a>
+                    </li>
+                    <li>
+                      <a class="js-fb-message to_form" href="#scroll_element"><span class="text-hide 5 lt15">Messenger</span><svg class="i-svg i-msgr" height="17" viewBox="0 0 17 17" width="17">
+                      <path d="M8.5.002A8.338 8.338 0 0 0 0 8.147a7.989 7.989 0 0 0 2.833 6.062v2.437a.355.355 0 0 0 .542.3l1.974-1.233a8.77 8.77 0 0 0 3.151.579A8.338 8.338 0 0 0 17 8.147 8.338 8.338 0 0 0 8.5.002zm5.565 6.27l-4.25 4.25a.354.354 0 0 1-.481.018L7.04 8.575l-3.683 2.008a.355.355 0 0 1-.42-.561l4.25-4.25a.354.354 0 0 1 .481-.018l2.291 1.964 3.684-2.007a.354.354 0 0 1 .453.099.353.353 0 0 1-.031.462z"></path></svg><span class="o-btn-text">1037995121</span></a>
+                    </li>
+                    <li>
+                      <a class="js-viber-share to_form" href="#scroll_element"><span class="text-hide 6 lt16">Viber</span><svg class="i-svg i-vb" height="17" viewBox="0 0 15 17" width="15">
+                      <path d="M8.691 1.051a6.717 6.717 0 0 1 2.298.711c.744.379 1.22.737 1.849 1.391.591.619.917 1.084 1.265 1.809.483 1.014.758 2.216.805 3.541.018.452.005.553-.094.683-.188.249-.602.209-.744-.074-.044-.091-.057-.173-.072-.532a9.695 9.695 0 0 0-.136-1.344c-.292-1.68-1.066-3.024-2.3-3.988-1.029-.805-2.092-1.197-3.485-1.281-.471-.03-.553-.05-.66-.133-.198-.163-.208-.545-.017-.723.116-.111.198-.126.602-.112.211.007.521.031.689.052zm-5.666.278c.087.031.221.106.297.155.471.327 1.783 2.075 2.211 2.948.246.496.328.866.251 1.141-.079.293-.211.449-.798.942-.236.2-.457.402-.491.457a1.253 1.253 0 0 0-.161.586c.002.428.27 1.211.622 1.813.272.466.761 1.067 1.244 1.526.568.541 1.069.912 1.634 1.203.726.376 1.17.475 1.494.316.082-.037.169-.091.196-.115.025-.021.216-.266.424-.533.402-.526.493-.613.768-.711.35-.123.707-.091 1.066.102.273.147.868.531 1.252.811.506.369 1.587 1.288 1.733 1.47.258.332.302.755.129 1.222-.184.493-.898 1.418-1.396 1.813-.451.355-.771.493-1.192.514-.347.018-.491-.013-.935-.203-3.48-1.498-6.258-3.727-8.465-6.792C1.756 8.393.878 6.733.278 5.009-.071 4.005-.088 3.567.199 3.056c.124-.217.652-.754 1.036-1.054.64-.497.935-.68 1.17-.731a1.35 1.35 0 0 1 .62.058zm5.837 1.595c1.505.229 2.67.958 3.433 2.14.429.666.697 1.449.789 2.289.032.306.032.867-.003.96a.57.57 0 0 1-.225.255.537.537 0 0 1-.417-.016c-.191-.101-.247-.26-.247-.694 0-.67-.167-1.373-.454-1.921a3.873 3.873 0 0 0-1.383-1.501c-.499-.311-1.235-.539-1.907-.595-.242-.021-.376-.074-.468-.185a.485.485 0 0 1-.037-.583c.129-.208.327-.242.919-.149zm.528 1.95c.489.107.863.301 1.183.614.411.406.637.897.736 1.601.067.459.04.641-.116.789a.462.462 0 0 1-.58.012c-.119-.091-.157-.19-.184-.456a2.556 2.556 0 0 0-.193-.83c-.219-.488-.603-.741-1.252-.825-.305-.039-.397-.074-.496-.197a.494.494 0 0 1 .139-.723c.094-.048.134-.053.342-.04.129.009.32.03.421.055z"></path></svg><span class="o-btn-text">407359403493</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="post-page__columns">
+          <!-- <div class="post-page__columns-left sticky-parent">
+            <ul class="tags tags_left">
+              <li class="tags-item">
+                <a class="to_form 7 lt17" href="#scroll_element">#новини</a>
+              </li>
+              <li class="tags-item">
+                <a class="to_form 8 lt18" href="#scroll_element">#топ</a>
+              </li>
+              <li class="tags-item">
+                <a class="to_form 9 lt19" href="#scroll_element">#БЪЛГАРИЯ</a>
+              </li>
+              <li class="tags-item">
+                <a class="to_form 0 lt20" href="#scroll_element">#последни</a>
+              </li>
+            </ul>
+            <div class="read-next">
+              <h3 class="read-next__title 1 lt21">Прочети повече</h3>
+              <div class="read-next__container read-next__container_visible" data-mywidget-id="myWidget_ff7084618ee0d36bb819be1ea4870878_1">
+                <article class="read-next-item">
+                  <a class="to_form" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_0" href="#scroll_element">
+                  <div class="read-next-item__labels read-next-item__labels_top"></div></a><a class="read-next-item__title to_form 2 lt22" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_0" href="#scroll_element">Защо пенсионерите не получават обезщетение за лекарства?</a>
+                </article>
+                <article class="read-next-item">
+                  <a class="to_form" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_1" href="#scroll_element">
+                  <div class="read-next-item__labels read-next-item__labels_top"></div></a><a class="read-next-item__title to_form 3 lt23" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_1" href="#scroll_element">Промени в системата на здравеопазването – започват значителни съкращения на персонала.</a>
+                </article>
+                <article class="read-next-item">
+                  <a class="to_form" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_2" href="#scroll_element">
+                  <div class="read-next-item__labels read-next-item__labels_top"></div></a><a class="read-next-item__title to_form 4 lt24" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_2" href="#scroll_element">Кой ще състави новото правителство?</a>
+                </article>
+                <article class="read-next-item">
+                  <a class="to_form" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_3" href="#scroll_element">
+                  <div class="read-next-item__labels read-next-item__labels_top"></div></a><a class="read-next-item__title to_form 5 lt25" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_3" href="#scroll_element">Националната банка обясни как може да се намали процентът на рефинансиране</a>
+                </article>
+                <article class="read-next-item">
+                  <a class="to_form" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_4" href="#scroll_element">
+                  <div class="read-next-item__labels read-next-item__labels_top"></div></a><a class="read-next-item__title to_form 6 lt26" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_4" href="#scroll_element">Беларуската плувкиня Александра Герасимен се оттегли от големия спорт</a>
+                </article>
+                <article class="read-next-item">
+                  <a class="to_form" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_5" href="#scroll_element">
+                  <div class="read-next-item__labels read-next-item__labels_top"></div></a><a class="read-next-item__title to_form 7 lt27" data-mywidget-id="myWidgetItem_ff7084618ee0d36bb819be1ea4870878_5" href="#scroll_element">В България ще се изградят почти 50 000 “квадратни метра” напълно електрифицирани апартаменти.</a>
+                </article>
+              </div>
+            </div>
+          </div> -->
+          <div class="post-page__columns-right">
+            <header class="post-page-header">
+              <ul class="tags">
+                <li class="tags-item">
+                  <a class="to_form 8 lt28" href="#scroll_element">#NOTICIAS</a>
+                </li>
+                <li class="tags-item">
+                  <a class="to_form 9 lt29" href="#scroll_element">#TOP</a>
+                </li>
+                <li class="tags-item">
+                  <a class="to_form 0 lt30" href="#scroll_element">#TOXINAS</a>
+                </li>
+                <!-- <li class="tags-item">
+                  <a class="to_form 1 lt31" href="#scroll_element">#токсини</a>
+                </li> -->
+              </ul>
+              <div class="post-page-tools-footer">
+                <div class="social-share social-share_post social-share_column-xs" data-action="Big buttons under title">
+                  <div class="social-share__counter-xs js-sharing-counter visible-xs">
+                    24
+                  </div>
+                  <div class="social-share__counter js-sharing-counter hidden-xs">
+                    24
+                  </div>
+                  <div class="social-share__icons">
+                    <a class="social-share__icon social-share__icon_small social-share__icon_vk js-vk to_form" href="#scroll_element"><svg height="12" viewBox="0 0 22 12" width="22">
+                    <path d="M10.764 11.94h1.315s.397-.042.6-.251c.187-.192.18-.552.18-.552s-.025-1.685.794-1.934c.807-.245 1.844 1.629 2.942 2.35.832.545 1.463.425 1.463.425l2.938-.039s1.537-.09.808-1.244c-.06-.095-.425-.855-2.184-2.415-1.843-1.633-1.596-1.37.623-4.195 1.351-1.72 1.892-2.771 1.722-3.22-.16-.43-1.154-.316-1.154-.316l-3.308.02s-.246-.033-.427.071c-.178.102-.292.34-.292.34s-.524 1.33-1.222 2.463C14.09 5.833 13.5 5.96 13.26 5.81c-.56-.346-.42-1.388-.42-2.13 0-2.315.368-3.28-.716-3.531-.36-.082-.624-.137-1.544-.146C9.4-.01 8.4.006 7.835.27c-.377.176-.668.568-.49.59.218.029.713.128.976.47.339.44.327 1.43.327 1.43s.195 2.725-.455 3.064c-.446.232-1.057-.242-2.371-2.41-.673-1.11-1.18-2.338-1.18-2.338S4.542.848 4.368.725C4.157.576 3.86.529 3.86.529L.717.549S.245.562.072.757c-.155.175-.012.536-.012.536s2.46 5.5 5.247 8.271c2.556 2.542 5.457 2.375 5.457 2.375" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_tw js-tw to_form" href="#scroll_element"><svg height="15" viewBox="0 0 18 15" width="18">
+                    <path d="M0 12.616a10.657 10.657 0 0 0 5.661 1.615c6.793 0 10.507-5.476 10.507-10.223 0-.156-.003-.31-.01-.464A7.38 7.38 0 0 0 18 1.684a7.461 7.461 0 0 1-2.12.564A3.621 3.621 0 0 0 17.503.262c-.713.411-1.505.71-2.345.871A3.739 3.739 0 0 0 12.462 0C10.422 0 8.77 1.607 8.77 3.59c0 .283.033.556.096.82A10.578 10.578 0 0 1 1.254.656a3.506 3.506 0 0 0-.5 1.807c0 1.246.65 2.346 1.642 2.99a3.731 3.731 0 0 1-1.673-.45v.046c0 1.74 1.274 3.193 2.962 3.523a3.756 3.756 0 0 1-.972.126c-.239 0-.47-.022-.695-.064.469 1.428 1.833 2.467 3.449 2.494A7.531 7.531 0 0 1 .88 12.665c-.298 0-.591-.014-.881-.049" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_fb js-fb to_form" href="#scroll_element"><svg height="16" viewBox="0 0 8 16" width="8">
+                    <path d="M5.937 2.752h1.891V.01L5.223 0c-2.893 0-3.55 2.047-3.55 3.353v1.829H0v2.824h1.673V16H5.19V8.006h2.375l.308-2.824H5.19v-1.66c0-.624.44-.77.747-.77" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_gp js-gp to_form" href="#scroll_element"><svg height="14" viewBox="0 0 21 14" width="21">
+                    <path d="M6.816.006C8.5-.071 10.08.646 11.37 1.655a24.11 24.11 0 0 1-1.728 1.754C8.091 2.36 5.89 2.06 4.34 3.272c-2.217 1.503-2.317 5.05-.186 6.668 2.073 1.843 5.991.928 6.564-1.895-1.298-.02-2.6 0-3.899-.042-.003-.76-.006-1.518-.003-2.278 2.17-.006 4.341-.01 6.516.007.13 1.786-.11 3.688-1.23 5.164-1.696 2.34-5.1 3.022-7.756 2.02C1.681 11.921-.207 9.161.018 6.348.077 2.905 3.305-.11 6.816.006zm10.375 3.812h1.893c.004.634.007 1.27.014 1.903.632.007 1.27.007 1.902.013v1.893l-1.902.016c-.007.636-.01 1.27-.014 1.902h-1.896c-.006-.632-.006-1.266-.013-1.899l-1.902-.02V5.735c.633-.006 1.266-.01 1.902-.013.004-.636.01-1.27.016-1.903z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_mail js-mail to_form" href="#scroll_element"><svg height="16" viewBox="0 0 17 16" width="17">
+                    <path d="M8.205 3.322c1.3 0 2.521.563 3.418 1.445v.003c0-.423.29-.742.694-.742l.101-.001c.631 0 .76.586.76.771l.004 6.584c-.045.431.454.653.73.377 1.077-1.086 2.366-5.585-.67-8.192-2.831-2.43-6.629-2.03-8.649-.664-2.146 1.453-3.52 4.668-2.185 7.688 1.455 3.294 5.617 4.276 8.091 3.296 1.253-.496 1.832 1.165.53 1.708-1.965.822-7.438.74-9.994-3.605C-.692 9.057-.6 3.896 3.98 1.222c3.505-2.046 8.125-1.48 10.91 1.374 2.913 2.985 2.743 8.572-.097 10.745-1.288.986-3.199.025-3.187-1.413l-.013-.47a4.827 4.827 0 0 1-3.388 1.381c-2.566 0-4.825-2.215-4.825-4.733 0-2.543 2.259-4.784 4.825-4.784zm3.231 4.602C11.34 6.08 9.944 4.97 8.26 4.97h-.063c-1.945 0-3.023 1.5-3.023 3.204 0 1.908 1.305 3.113 3.015 3.113 1.907 0 3.162-1.37 3.252-2.992l-.004-.372z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_viber js-viber to_form" href="#scroll_element"><svg height="21" viewBox="0 0 21 21" width="21">
+                    <path d="M18.639 14.904c-.628-.506-1.3-.96-1.96-1.423-1.318-.926-2.523-.997-3.506.491-.552.836-1.325.873-2.133.506-2.228-1.01-3.949-2.567-4.956-4.831-.446-1.002-.44-1.9.603-2.609.552-.375 1.108-.818 1.064-1.637C7.693 4.334 5.1.765 4.077.39 3.653.233 3.23.243 2.8.388.4 1.195-.594 3.169.358 5.507c2.84 6.974 7.84 11.829 14.721 14.792.392.169.828.236 1.049.297 1.567.015 3.402-1.494 3.932-2.992.51-1.441-.568-2.013-1.421-2.7zm-7.716-13.8c-.417-.064-1.052.026-1.02-.525.046-.817.8-.513 1.165-.565 4.833.163 8.994 4.587 8.935 9.359-.006.468.162 1.162-.536 1.149-.668-.013-.493-.717-.553-1.185-.64-5.067-2.96-7.46-7.991-8.233zm.984 1.39c3.104.372 5.64 3.065 5.615 6.024-.047.35.157.95-.409 1.036-.764.116-.615-.583-.69-1.033-.511-3.082-1.593-4.213-4.7-4.907-.458-.102-1.17-.03-1.052-.736.113-.671.752-.443 1.236-.385zm.285 2.419c1.377-.034 2.992 1.616 2.969 3.044.014.39-.028.802-.49.857-.333.04-.552-.24-.586-.585-.128-1.272-.798-2.023-2.073-2.228-.382-.061-.757-.184-.579-.7.12-.345.436-.38.76-.388z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_telegram js-telegram to_form" href="#scroll_element"><svg height="17" viewBox="0 0 21 17" width="21">
+                    <path d="M10.873 13.323c-.784.757-1.56 1.501-2.329 2.252-.268.262-.57.407-.956.387-.263-.014-.41-.13-.49-.378-.589-1.814-1.187-3.626-1.773-5.44a.425.425 0 0 0-.322-.317A417.257 417.257 0 0 1 .85 8.541a2.37 2.37 0 0 1-.59-.265c-.309-.203-.353-.527-.07-.762.26-.216.57-.397.886-.522C2.828 6.304 4.59 5.638 6.35 4.964L19.039.101c.812-.311 1.442.12 1.366.988-.05.572-.2 1.137-.32 1.702-.938 4.398-1.88 8.794-2.82 13.191l-.003.026c-.23 1.006-.966 1.28-1.806.668-1.457-1.065-2.91-2.134-4.366-3.201-.068-.05-.14-.098-.217-.152zm-3.22 1.385c.023-.103.038-.151.043-.2.092-.989.189-1.977.27-2.967a.732.732 0 0 1 .256-.534c2.208-1.968 4.41-3.943 6.613-5.917.626-.561 1.256-1.12 1.876-1.688.065-.06.08-.174.117-.263-.095-.027-.203-.095-.285-.072-.189.052-.38.127-.545.23C12.722 5.343 9.45 7.395 6.175 9.44c-.167.104-.214.19-.147.389.518 1.547 1.022 3.098 1.531 4.648.02.061.048.12.094.23z" fill="#FFF" fill-rule="evenodd"></path></svg></a><a class="social-share__icon social-share__icon_small social-share__icon_whatsapp js-whatsapp to_form" href="#scroll_element"><svg height="22" viewBox="0 0 22 22" width="22">
+                    <path d="M7.926 5.587c-.213-.51-.375-.53-.698-.543a6.234 6.234 0 0 0-.369-.013c-.42 0-.86.123-1.125.395-.323.33-1.125 1.1-1.125 2.677 0 1.578 1.15 3.104 1.306 3.318.162.213 2.244 3.498 5.476 4.837 2.528 1.048 3.278.95 3.853.828.84-.181 1.894-.802 2.16-1.552.265-.75.265-1.39.187-1.527-.078-.135-.291-.213-.614-.375-.323-.161-1.894-.937-2.192-1.04-.29-.11-.569-.072-.788.239-.31.433-.614.873-.86 1.138-.194.207-.511.233-.776.123-.356-.149-1.351-.498-2.58-1.591-.95-.847-1.596-1.901-1.784-2.218-.187-.323-.02-.511.13-.685.161-.201.316-.343.478-.53.161-.188.252-.285.355-.505.11-.214.033-.434-.045-.595-.078-.162-.724-1.74-.99-2.38zM10.996 0C4.934 0 0 4.934 0 11c0 2.405.776 4.636 2.095 6.447L.724 21.534l4.228-1.351A10.913 10.913 0 0 0 11.003 22C17.067 22 22 17.066 22 11S17.067 0 11.003 0h-.006z" fill="#FFF" fill-rule="evenodd"></path></svg></a>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="post-page-content">
+              <div class="post-page-content-main">
+                <div class="contentBox">
+                  <h1><span style="font-family:Arial,Helvetica,sans-serif"><font class="2 lt32" color="darkred">¡Todo el mundo está hablando de eso!<script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 - 3 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> ¡Una estudiante española recibió un premio por descubrir un método de tratamiento de prostatitis que salvará la vida de millones de personas!</font></span></h1>
+                  <hr style="border: #cc0000 1px solid;">
+                  <h3><span class="3 lt33" style="font-family:Arial,Helvetica,sans-serif">Recibió el mayor premio del país en medicina por descubrir un método de tratamiento de prostatitis.</span></h3>
+                  <hr style="border: #cc0000 1px solid;">
+                  <img class="img img-responsive" src="img/11.jpg">
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="4 lt34">En verano del año 2022 en el Congreso europeo de urólogos pasó algo asombroso. Todo el público aplaudió de pie a una persona que estaba haciendo una presentación durante más de 10 minutos. Era María Gómez, una estudiante de España. Ofreció usar una fórmula única para el tratamiento completo de la prostatitis y la prevención de sus consecuencias fatales.</b></span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><i class="5 lt35">María ofreció una idea innovadora, y los institutos científicos de España e Israel decidieron implementarla. En el desarrollo del fármaco participaron los expertos del Instituto de urología de la Universidad médica y muchos otros expertos. El fármaco ya ha sido desarrollado y da muy buenos resultados.</i></span></p>
+                  <h3><font class="6 lt36" color="red" style="font-family:Arial,Helvetica,sans-serif">Cómo el nuevo fármaco puede salvar millones de vidas y por qué los españoles pueden adquirirlo con un descuento importante – consúltelo en el artículo de hoy.</font></h3>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="7 lt37">Reportero: María, resulta que formas parte de la decena de los estudiantes de medicina más inteligentes del mundo. ¿Por qué has decidido dedicarte a los problemas de urología?</b></span></p>
+                  <p><span class="8 lt38" style="font-family:Arial,Helvetica,sans-serif">No quiero hablar de eso de forma pública, pero mi motivación en este caso es personal.  Hace unos años mi padre murió del cáncer de próstata. Parecía que todo iba bien, y luego después de sufrir mucho, murió. Por esta razón elegí la urología. Estaba conmovida al enterarme de que la mayor parte de fármacos en las farmacias se basan en sustancias químicas que solo destruyen el cuerpo. Mi padre los tomaba todos los días.</span></p>
+                  <p><span class="9 lt39" style="font-family:Arial,Helvetica,sans-serif">Llevo ya tres años dedicándome a este tema. En realidad, el nuevo método de tratamiento de prostatitis del que todo el mundo habla no apareció hoy, sino cuando redacté mi tesis. Era consciente de haber descubierto algo totalmente nuevo, pero no esperaba que esto provocaría tanto interés de varias estructuras.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="0 lt40">Reportero: ¿Es verdad que te querían detener enseguida después la conferencia?</b></span></p>
+                  <p><span class="1 lt41" style="font-family:Arial,Helvetica,sans-serif">Sí, a los tres días de mi intervención en la conferencia. Afortunadamente, el personal de la Universidad Médica consiguió ponerse en contacto conmigo. Me ayudaron a resolver este caso con las autoridades.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="2 lt42">Reportero: ¿Qué pasó en realidad? </b></span></p>
+                  <p><span class="3 lt43" style="font-family:Arial,Helvetica,sans-serif">Algunos jugadores importantes del mercado farmacéutico estaban asustados de mi posible negocio con la Universidad Médica y otras instituciones de desarrollo del fármaco innovador. Ya en aquel momento quedaba claro que el mismo podría restringir los problemas de prostatitis hasta el nivel óptimo y que sería un remedio perfecto para afrontar esta enfermedad.  No tengo mucha información sobre el tema, pero los fármacos para la prostatitis son unos de los segmentos del mercado que más ganancias proporcionan. Nadie desea perder millones ni millares de USD a causa de una estudiante. Es por eso que tenemos pleitos por razones poco significantes. Pensaban que no entiendo nada y que nadie puede protegerme. Pero cuando los abogados intervinieron, resultó que todo estaba inventado. Luego me dejaron en paz.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="4 lt44">Reportero: ¿Quiere decir que después de este caso Vd. no tuvo más problemas?</b></span></p>
+                  <p><span class="5 lt45" style="font-family:Arial,Helvetica,sans-serif">No hubo problemas, había intentos de comprar mi fórmula. Una vez publicada mi metodología, empecé a recibir varias ofertas. Al principio me llamaron los franceses y me ofrecieron 120 000 EUR. Luego una empresa holding norteamericana me quiso “comprar” por 35 millones USD. He cambiado de teléfono y no entro en las redes sociales porque recibo las ofertas a diario por todos los canales de comunicación.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="6 lt46">Reportero: Si no entiendo mal, ¿Vd. no vendió la fórmula?</b></span></p>
+                  <p><span class="7 lt47" style="font-family:Arial,Helvetica,sans-serif">No, no la vendí. Puede sonar un poco egoísta, pero no inventé este fármaco para que los extranjeros pudieran ganar dinero con el mismo. ¿Y si vendo la fórmula? Recibirán el patente, pondrán precio alto y tendrán producción de monopolio. A lo mejor soy joven, pero no soy tonta. En este caso, los españoles simplemente no podrán afrontar los problemas urológicos. Uno de los médicos extranjeros me dijo que este fármaco no debería costar menos de 3000 EUR. No puedo permitirlo. ¿Quién puede permitirse un gasto de 3000 EUR para comprar los fármacos?</span></p>
+                  <p><span class="8 lt48" style="font-family:Arial,Helvetica,sans-serif">Por lo tanto, al recibir una oferta de las instituciones más importantes para participar en el desarrollo del remedio eficaz, lo acepté enseguida. Trabajamos en equipo con los mejores expertos. Era una experiencia asombrosa. Ahora el fármaco pasó todos los ensayos clínicos y está disponible para los pacientes</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b><font class="9 lt49" color="darkred">Manuel López coordinó la creación del fármaco, un profesor y un urólogo español conocido. Le pedimos que nos contara sobre el nuevo fármaco y su función.</font></b></span></p><img class="img img-responsive" src="img/foto.jpg" style="width:100%">
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="0 lt50">Reportero: ¿Cómo fue la idea de María? ¿Es verdad que el fármaco ayuda a afrontar la prostatitis?</b></span></p>
+                  <p><span class="1 lt51" style="font-family:Arial,Helvetica,sans-serif">Es un enfoque muy nuevo para afrontar la prostatitis. ¿Cómo funcionan los antiguos fármacos? Dilatan los vasos sanguíneos y quitan el dolor con anestésicos. En este caso, desafortunadamente, dañan los vasos sanguíneos y el corazón y pueden provocar la muerte causada por un ictus o un infarto. Lamentablemente, no curan la causa básica de prostatitis, la alteración de la circulación de sangre en la próstata. El problema persiste y se hace más grave con cada dosis de estos fármacos.</span></p>
+                  <p><span class="2 lt52" style="font-family:Arial,Helvetica,sans-serif">El fármaco desarrollado por María limpia las arterías pequeñas de la próstata contra el dióxido de carbono, al quitar la causa inicial de prostatitis y adenoma. Se puede curar la prostatitis completamente si la misma está en la etapa inicial. Pero para prevenir las etapas graves de la enfermedad por supuesto esto no es suficiente. En realidad, son esfuerzos de muchos médicos y expertos médicos que intentan crear un fármaco eficaz a base de la fórmula ofrecida que curará todas las etapas de la prostatitis.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="3 lt53">Reportero: ¿La prostatitis es muy peligrosa?</b></span></p>
+                  <p><span class="4 lt54" style="font-family:Arial,Helvetica,sans-serif">¿Ha visto alguna vez las estadísticas de muertes en España? ¿Sabe cuántas personas mueren del cáncer de próstata? Un 63% de todos los casos. Son más de dos tercios. ¿Conoce Vd. a alguna persona que murió de prostatitis y no del cáncer de próstata? ¿El cáncer? No. Y tampoco han visto el cáncer en la morgue. Porque es imposible. Todos los que murieron de insuficiencia renal, cardíaca, del cáncer de próstata etc., en primer lugar tuvieron problemas de próstata. ¡Es todo! En Alemania se sabe desde hace mucho que todas estas enfermedades de hombres son consecuencias de la prostatitis. El pez se pudre por la cabeza, los hombres por... Si Vd. quita este problema, disfrutará de la erección hasta a los 90 años de edad. Y si Vd. quita las consecuencias y no la causa del problema, tomará un puñado de drogas todos los días, y el resultado será nulo.</span></p>
+                  <p><span class="5 lt55" style="font-family:Arial,Helvetica,sans-serif">Con la edad, el estado de la próstata se empeora, y el nivel de su funcionalidad baja. El suministro de sangre se altera, aparecen las primeras áreas de necrosis. En la primera etapa, aparecen los primeros síntomas, el dolor de testículos,  el dolor al orinar, deseo frecuente de orinar, la disfunción sexual, el dolor en la parte inferior del vientre después del acto sexual. Si aparecen estos síntomas, significa que el hombre ya tiene problemas importantes de próstata y necesita tratamiento urgente.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="6 lt56">Reportero: Y ¿en cuanto a los fármacos similares? Al fin y al cabo, hay un montón de hombres que sufren de prostatitis.</b></span></p>
+                  <p><span class="7 lt57" style="font-family:Arial,Helvetica,sans-serif">Lo que pasa es que son muchos, pero todos se basan en el principio anteriormente descrito. Los análogos de drogas dilatan la próstata y los vasos de las vías urinarias, dañan sus paredes, sobrecargan los riñones y el corazón. Sí, quitan los síntomas de la prostatitis, pero el hombre se siente mejor solo por un periodo corto. En total, provocan un efecto negativo al cuerpo. No ayudan a curar la prostatitis. María lleva toda la razón. Si vemos los precios de fármacos en las farmacias, cualquier experto entenderá que simplemente no vale la pena tomarlo.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="8 lt58">Reportero: ¿Cómo se llama el nuevo fármaco? Informe brevemente sobre su función</b></span></p>
+                  <p><span class="9 lt59" style="font-family:Arial,Helvetica,sans-serif">El fármaco se llama PROS TONIX. Es eficaz gracias al impacto integral al cuerpo y gracias a su contenido único y natural. PROS TONIX limpia totalmente la próstata, el sistema urogenital y los riñones. Recupera la circulación de sangre normal y para los procesos de necrosis. La próstata deja de propagar la infección en el sistema urogenital. Una vez finalizado el curso de tratamiento, los hombres se recuperan totalmente, su deseo sexual aumenta, desaparece el riesgo de desarrollo del cáncer de próstata, desaparecen los problemas al orinar y todos los demás problemas vinculados a esto.</span></p>
+                  <p><span class="0 lt60" style="font-family:Arial,Helvetica,sans-serif">Es por eso que nosotros, al igual que María, no usamos un enfoque formal al asunto. Este remedio no es otra fórmula química copiada de un fármaco a otro, sino una combinación única de los extractos herbales de alta concentración. Este remedio no es solamente muy seguro, sino también el más eficaz.</span></p>
+                  <p><span class="1 lt61" style="font-family:Arial,Helvetica,sans-serif">En solo 2-3 días, una vez empezado el tratamiento, la inflamación en el sistema urogenital del hombre desaparece completamente. Después de eso, la próstata se limpia y se regenera. A diferencia de los fármacos químicos disponibles en farmacias, PROS TONIX no impacta de forma negativa al corazón y otros órganos.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="2 lt62">Reportero: ¿Su remedio se venderá en farmacias? Y, a propósito, ¿cuánto va a costar?</b></span></p>
+                  <p><span class="3 lt63" style="font-family:Arial,Helvetica,sans-serif">Al enterarnos de haber creado algo realmente eficaz, los farmaceutas nos atacaron por todas partes. Al principio le ofrecieron a María que vendiera su fórmula. Luego intentaron bloquear la producción del fármaco. El tratamiento de prostatitis es uno de los segmentos más grandes del mercado farmacéutico mundial. Los fármacos valen millares de USD. Nuestra invención puede cambiar totalmente la situación en el mercado. Es que nadie gastará dinero cada mes en fármacos que no sirven para nada si puede hacer un curso de tratamiento PROS TONIX una vez y olvidarse del problema para siempre.</span></p>
+                  <p><span class="4 lt64" style="font-family:Arial,Helvetica,sans-serif">Las redes de farmacias colaboran mucho con las empresas farmacéuticas. Y por supuesto soportan la venta de los fármacos. Por lo tanto, desean que callemos. Hoy día nuestro remedio es el único fármaco recomendado en España para curar la prostatitis que previene las complicaciones de cáncer, ictus o infarto.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="5 lt65">Reportero: Si PROS TONIX no se vende en las farmacias, ¿dónde se puede comprarlo?</b></span></p>
+                  <p><span class="6 lt66" style="font-family:Arial,Helvetica,sans-serif">Hemos decidido que si las farmacias ordinarias no desean ni siquiera oír nada de nosotros, podemos prescindir de las mismas. Se organiza la venta directa del fármaco PROS TONIX. Sin un intermediario de farmacia comercial. Hemos negociado varias opciones y seleccionamos la más eficaz.<b><font color="red" style="font-family:Arial,Helvetica,sans-serif"> Para no ser víctima de estafadores y de los fármacos falsificados, ¡todos los que desean adquirir PROS TONIX deben dejar una solicitud para hacer un pedido directamente en nuestro sitio web!</font></b></span></p>
+				  
+				  <img src="img/11320b1.png" style=" display: block;margin: 0 auto;width: ; max-width: 100%">
+                  <p><span class="7 lt67" style="font-family:Arial,Helvetica,sans-serif">El pedido llegará directamente a los productores, el operador se pondrá en contacto con Vd., proporcionará la información detallada sobre el fármaco y la forma de tomarlo, solicitará la dirección de entrega y la información sobre la hora de entrega más cómoda para Vd. El pago se realiza en el momento de entrega con mensajero.</span></p>
+                  <p><span class="8 lt68" style="font-family:Arial,Helvetica,sans-serif">Todos los que formalizan el pedido hasta <script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> (inclusive), ¡recibirán PROS TONIX con un descuento de 50%! Es nuestra campaña conjunta con el Instituto cuyo objetivo es llamar la atención de la gente a este fármaco. Esperamos que funcione el efecto del boca a boca y cada persona contenta recomendará este fármaco a sus amigos.</span></p>
+                  <p><span style="font-family:Arial,Helvetica,sans-serif"><b class="9 lt69">¡La promoción será válida solo durante una semana a partir de la fecha de lanzamiento (de <script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 - 7 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> a <script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> (inclusive)!</b></span></p>
+                  <p><b><font class="1 lt71" color="red" style="font-family:Arial,Helvetica,sans-serif">ACTUALIZACIÓN <script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 - 1 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> <br>Lamentablemente, varios grupos de adversarios organizaron una campaña importante contra nosotros. Por lo tanto, nos vemos obligados a cancelar la venta de  PROS TONIX por un periodo indeterminado a partir de <script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> Hoy es el último día de poder hacer un pedido para recibir PROS TONIX por precio de <span class="price_main"> 49 EUR.</span>. Pido disculpas a todos los que no pueden pedir nuestro fármaco, pero así es la realidad en España...</font></b></p>
+                  <div class="countdown-block">
+                    <div class="countdown-container">
+                      <h3 class="redd 2 lt72">UN DESCUENTO DE 50%</h3>
+                      <h3 class="3 lt73">OFERTA VÁLIDA</h3>
+                      <div class="countdown">
+                        <div class="countdown-item hoursSH">
+                          08
+                        </div>
+                        <div class="countdown-divider 4 lt74">:</div>
+                        <div class="countdown-item minutesSH">
+                          48
+                        </div>
+                        <div class="countdown-divider 5 lt75">:</div>
+                        <div class="countdown-item secondsSH">
+                          07
+                        </div>
+                      </div>
+                      <div class="countdown-text">
+                        <span class="6 lt76">HORAS</span><span class="7 lt77">MINUTOS</span><span class="8 lt78">SEGUNDOS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <center id="scroll_element" style="">
+                    <div class="myFormFieldForRequest" id="order_form">
+					
+                      <form class="order_form" id="order_form_place" method="post" name="order_form_place" 
+					  style="display:block;" geo="bg" action="api.php" 
+	onsubmit="return validate_form(this, 'Моля, въведете коректен номер телефона');">
+					  
+<input name="subid" type="hidden" value="{subid}">
+<input name="px" type="hidden" value="{px}">
+<input name="bayer" type="hidden" value="{bayer}">
+					  
+                        <center>
+                          <img src="img/med.png" style="max-width:100px;">
+                          <h2 class="9 lt79">Formulario de pedido oficial</h2>
+						  <span class="0 lt80" style="color:blue;font-size:14px;">№ 29 982 de 30 000 a fecha de 
+						  <script type=text/javascript>var appendNull = function (num) {return num< 10 ? 0 + num.toString() : num;};d = new Date();p = new Date(d.getTime() + 0 * 86400000);monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());</script> </span>
+                        </center>
+                        <div>
+                          <font style="vertical-align: inherit;">Compre PROS TONIX por precio reducido </font>
+						  <br>
+						  <span class="price_main"><span class="price_main_value"><font style="vertical-align: inherit;">
+						  <font style="vertical-align: inherit;">49 </font></font></span><span class="price_main_currency"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                EUR</font></font></span></span>
+                        </div>
+                        <div class="toscroll" style="margin:15px 10px -5px 10px;border:2px solid #0299ff;padding:10px;">
+                          <span><b class="2 lt82">Para recibir PROS TONIX con un descuento de 50%, introduzca Su nombre y su teléfono en los campos más abajo y haga clic sobre "hacer un pedido".</b></span>
+                        </div>
+
+                        <div class="order_form_pole">
+                          <label class="3 lt83">Su nombre:</label><input name="name" required="" type="text">
+                        </div>
+                        <div class="order_form_pole">
+                          <label class="4 lt84">Teléfono (móvil activo):</label>
+                          <div class="form_phone">
+                            <input class="only_number" name="phone" required="" type="tel" id="phone">
+                          </div>
+                        </div>
+                        <div style="margin-bottom:20px;">
+                          <button class="js_submit button__text 5 lt85" type="submit">HACER UN PEDIDO</button>
+                        </div>
+                        <div class="timelimit 6 lt86" style="font-size:14px;">
+						<b class="timer" style="display:inline-block;" margin-bottom:="" 5px;background:url(img="" timericon2.png)="" no-repeat;padding-left:14px;color:red;="">&nbsp;</b></div><span class="additional 7 lt87">
+              * Sus datos se envían directamente al productor. Nadie tiene acceso a los mismos excepto el productor.</span>
+           
+
+</form>
+                    </div>
+                  </center>
+                  <hr style="border: #cc0000 1px solid;">
+                </div>
+                <div class="content-note" itemprop="text"></div>
+                <div class="post-page-content-tags">
+                  <ul class="tags">
+                    <li class="tags-item">
+                      <a class="to_form 8 lt88" href="#scroll_element">#NOTICIAS</a>
+                    </li>
+                    <li class="tags-item">
+                      <a class="to_form 9 lt89" href="#scroll_element">#ACTUAL</a>
+                    </li>
+                    <li class="tags-item">
+                      <a class="to_form 0 lt90" href="#scroll_element">#ALREDEDOR DEL MUNDO</a>
+                    </li>
+                    <li class="tags-item">
+                      <a class="to_form 1 lt91" href="#scroll_element">#TOP</a>
+                    </li>
+                    <li class="tags-item">
+                      <a class="to_form 2 lt92" href="#scroll_element">#TOXINAS</a>
+                    </li>
+                  </ul>
+                </div>
+                <div></div>
+                <div class="comments">
+                  <div class="comments-btn-block">
+                    <div class="comments__btn-up js-btn-up hidden">
+                      <svg height="12" viewBox="0 0 18 12" width="18">
+                      <path d="M9 0L0 9l2.1 2.1L9 4.2l6.9 6.9L18 9" fill="#8AA1AF" fill-rule="evenodd"></path></svg>
+                    </div>
+                  </div>
+                  <div class="comments-flex comments-flex_top">
+                    <div class="comments__count js-comments-count-custom 3 lt93">Comentarios: 14</div>
+                    <div class="comments-choose hidden-xs hidden-sm">
+                      <button class="comments-choose__btn"><span class="comments-choose__btn-name comments-choose__btn-name_close 4"><a class="lt94" href="#scroll_element">Populares</a></span></button>
+                      <ul class="comments-list">
+                        <li style="list-style: none; display: inline">
+                          <div class="comments-border comments-border_choose"></div>
+                        </li>
+                        <li class="comments-list__item comments-list__item_chosen 5 lt95" data-sort="upvotes_count">Populares</li>
+                        <li class="comments-list__item 6 lt96" data-sort="created_at">Populares</li>
+                      </ul>
+                    </div>
+                    <div class="comments-btns">
+                      <div class="comments-toggle js-toggle-comments 7">
+                        <a class="lt97" href="#scroll_element">Mostrar todos los comentarios</a>
+                      </div>
+                      <div class="comments-choose">
+                        <button class="comments-choose__btn"><span class="comments-choose__btn-name comments-choose__btn-name_close 8 lt98">Популярни</span></button>
+                        <ul class="comments-list">
+                          <li style="list-style: none; display: inline">
+                            <div class="comments-list__border"></div>
+                          </li>
+                          <li class="comments-list__item comments-list__item_chosen 9 lt99" data-sort="upvotes_count">Populares</li>
+                          <li class="comments-list__item 00 lt100" data-sort="created_at">Populares</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments-toggle-md hidden-xs hidden-sm">
+                    <div class="comments-toggle js-toggle-comments 01">
+                      <a class="lt101" href="#scroll_element">Mostrar todos los comentarios</a>
+                    </div>
+                  </div>
+                  <div class="comments-chat">
+                    <div class="comments-chat-container">
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_01.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 02 lt102">Andrés Santana</div><!--<div class="comments-flex__date">23 часа назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="03 lt103">Tuve problemas al orinar, soy camionero. Pensaba ir al hospital, me sentía muy mal. En algún momento empecé a orinar cada 1-2 horas. Ni siquiera deseo contar cuánto dinero gasté en farmacias por los remedios no eficaces.</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 04">
+                                <a class="lt104" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">10</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_02.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 05 lt105">Miguel Nieto</div><!--<div class="comments-flex__date">22 часа назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="06 lt106">Tengo dolores constantes y sufro de potencia débil. Quisiera creer que este fármaco me ayudaría... ¡Y de repente un descuento tan importante!</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 07">
+                                <a class="lt107" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">10</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_03.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 08 lt108">Miguel Nieto</div><!--<div class="comments-flex__date">20 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="09 lt109">Tengo dolores constantes y sufro de potencia débil. Quisiera creer que este fármaco me ayudaría... ¡Y de repente un descuento tan importante!</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 10">
+                                <a class="lt110" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">20</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_04.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 11 lt111">Elena Órtiz</div><!--<div class="comments-flex__date">19 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="12 lt112">He curado a mi marido .... literalmente :) ya no tiene prostatitis y su erección ya es aún más fuerte:)))</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 13">
+                                <a class="lt113" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">8</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_05.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 14 lt114">Julia Lazo</div><!--<div class="comments-flex__date">18 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="15 lt115">¡PROS TONIX realmente ayuda! Lo pedí para mi marido que tiene cáncer de próstata. Conseguimos afrontar la enfermedad. ¡Recomiendo este remedio a todos!</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 16">
+                                <a class="lt116" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">9</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/10.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 17 lt117">Juan Solís</div><!--<div class="comments-flex__date">17 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="18 lt118">Acabo de terminar un curso de tratamiento, este remedio realmente me ayudó. Pero haré otro curso más para la profiláctica… Me da miedo volver a sufrir de la prostatitis.</p><!--<p><img src='img/offersImg/f19085504d1e9e9c9b68ea8b871c0547.jpg' style='width:100%;max-width:350px;'></p>-->
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 19">
+                                <a class="lt119" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">13</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_07.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 20 lt120">Jorge Espinoza</div><!--<div class="comments-flex__date">15 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="21 lt121">¡Conseguí hacer un pedido! Espero que lo entreguen mañana.</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 22">
+                                <a class="lt122" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">20</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_11.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 23 lt123">Julio Sánchez</div><!--<div class="comments-flex__date">12 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="24 lt124">Llevo ya 2 semanas tomando este fármaco, por fin dejé de ir añ baño cada rato.</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 25">
+                                <a class="lt125" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">7</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_08.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 26 lt126">Antonia Castañeda</div><!--<div class="comments-flex__date">13 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="27 lt127">En los hospitales todo está abandonado. Llevamos mucho tiempo sin ir allí porque no tiene mucho sentido. En los hospitales privados uno simplemente tiene que pagar, pero no tiene otras opciones. Estoy muy agradecida a María porque ahora podemos comprar PROS TONIX con un descuento.</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 28">
+                                <a class="lt128" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">11</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_09.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 29 lt129">Sofía García</div><!--<div class="comments-flex__date">10 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="30 lt130">¡He leído los comentarios y entendí que necesito pedir este remedio ahora mismo para mi marido! Voy a hacer un pedido ahora mismo.</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 31">
+                                <a class="lt131" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">18</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_10.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 32 lt132">Catalina Rodríguez</div><!--<div class="comments-flex__date">5 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="33 lt133">He hecho un pedido, es muy fácil. ¡Muchas gracias!</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 34">
+                                <a class="lt134" href="#scroll_element">Respuestas</a>
+                              </div><a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                              <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">16</span></a>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="comment-bubble" itemscope="itemscope" itemtype="https://schema.org/Comment">
+                        <article class="comments-message comments-message_grey">
+                          <div class="comments-user">
+                            <div class="comments-avatar comments-avatar_grey"><img src="img/commit_11.jpg" style="border-radius:24px;"></div>
+                          </div>
+                          <div class="comments-field comments-field_grey js-bubble">
+                            <header class="comments-flex">
+                              <div class="comments-flex__name 35 lt135">Antonio Moriano</div><!--<div class="comments-flex__date">7 часов назад</div>-->
+                            </header>
+                            <div class="comments-field__txt">
+                              <p></p>
+                              <p class="36 lt136">Este remedio es simplemente un milagro. Tuve prostatitis en estado muy grave y problemas de potencial. También tuve problemas de tensión arterial alta. Pero ahora soy sano. Y por fin me siento feliz.</p>
+                              <p></p>
+                            </div>
+                            <div class="comments-field__image js-image-block">
+                              <div class="comments-field__image-load hidden">
+                                <div class="spinner-inner">
+                                  <svg class="spinner" viewBox="25 25 50 50">
+                                  <circle class="spinner-path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3"></circle></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <footer class="comments-flex comments-flex_footer">
+                              <div class="comments-flex__answer js-answer-btn 37">
+                                <a class="lt137" href="#scroll_element">Respuestas</a>
+                              </div>
+                              <div class="comments-like js-like-btn">
+                                <a href="#scroll_element"><svg class="comments-like__icon" height="13" viewBox="0 0 13 13" width="13">
+                                <path d="M1.576 4.875H0V13h1.576c.435 0 .788-.364.788-.813v-6.5c0-.448-.353-.812-.788-.812zM12.606 6.5l-.788 5.688c-.086.532-.354.812-.788.812H6.303c-.788 0-1.576-.813-2.364-.813H3.15V6.5c.032-.506.336-.95.787-1.154C5.373 4.7 6.3 3.24 6.302 1.626V.812c0-.45.353-.813.788-.813h.79c.434 0 .787.364.787.813v4.875h3.15c.214-.015.423.066.574.222.152.155.23.37.216.59z" fill="#4B87B8" fill-rule="evenodd"></path></svg><span class="comments-like__count">15</span></a>
+                              </div>
+                            </footer>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comments-form comments-form_unauthorized">
+                    <div class="comments-avatar comments-avatar_form hidden-xs hidden-sm comments-avatar_unauthorized"></div>
+                    <header class="comments-form-header comments-form-header_unauthorized">
+                      <div class="comments-avatar comments-avatar_unauthorized"></div>
+                    </header>
+                    <div class="comments-form__unauthorized js-show-auth 38">
+                      <a class="lt138" href="#scroll_element">Inicie sesión para dejar comentarios</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+ <script>
+        $(function () {
+            var nowDate = new Date();
+            var countDownDiff = Math.ceil((24 * 60 * 60) - (nowDate.getHours() * 60 * 60 + nowDate
+                .getMinutes() * 60 + nowDate.getSeconds()));
+            var endDate = new Date(nowDate.getTime() + countDownDiff * 1000);
+            setInterval(function () {
+                var diffDate = new Date(endDate.getTime() - Date.now()),
+                    h = (diffDate.getHours() > 9) ? diffDate.getHours() : '0' + diffDate.getHours(),
+                    m = (diffDate.getMinutes() > 9) ? diffDate.getMinutes() : '0' + diffDate
+                    .getMinutes(),
+                    s = (diffDate.getSeconds() > 9) ? diffDate.getSeconds() : '0' + diffDate
+                    .getSeconds();
+                $('.hoursSH').html(h);
+                $('.minutesSH').html(m);
+                $('.secondsSH').html(s);
+            }, 1000);
+        });
+    </script>
+
+ <script type="text/javascript">
+    $(function(){
+            $("a[href^='#']").click(function(){
+                    var _href = $(this).attr("href");
+                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                    return false;
+            });
+    });
+  </script>
+
+
+ 
+ <footer>
+<center>
+<span style="text-decoration: underline; cursor: pointer;" onclick="openInNewTab('cdn/disclaimer.html');">Disclaimer</span> |
+<span style="text-decoration: underline; cursor: pointer;" onclick="openInNewTab('cdn/terms.html');">Terms & Conditions</span> |
+<span style="text-decoration: underline; cursor: pointer;" onclick="openInNewTab('cdn/priv.html');">Privacy policy</span> <br>
+</center>
+<script>
+function openInNewTab(url)
+{var win = window.open(url, '_blank'); win.focus(); }
+</script>
+</footer>
+
+<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="/libs/js/gdpr.css">
+<script src="jquery.maskedinput.min.js"></script>
+    <script>
+        $(function()
+        {
+            $('#phone').on('change',function () {
+                var phone = $(this).val();
+                phone = phone.replace('0','');
+
+                while(phone.charAt(0) === '0')
+                {
+                    phone = phone.substr(1);
+                }
+
+                $(this).val(phone);
+            });
+            
+            $.mask.definitions['9'] = '';
+            $.mask.definitions['d'] = '[0-9]';
+
+            var theLanguage = $('html').attr('lang');
+
+            if(theLanguage == 'ru')
+            {
+                $("input[type=tel]").mask("+7 (ddd) ddd-dd-dd");
+            } else if (theLanguage == 'ua')
+            {
+                $("input[type=tel]").mask("+38-ddd-ddd-dd-dd");
+            } else if (theLanguage == 'by')
+            {
+                $("input[type=tel]").mask("+375 ddd-ddd-ddd");
+            } else if (theLanguage == 'kz')
+            {
+                $("input[type=tel]").mask("+7 ddd ddd dddd");
+            } else if (theLanguage == 'kg')
+            {
+                $("input[type=tel]").mask("+ddd ddd dd-dd-dd");
+            } else if (theLanguage == 'md')
+            {
+                $("input[type=tel]").mask("0 ddd ddddd");
+            } else if (theLanguage == 'az')
+            {
+                $("input[type=tel]").mask("+ddd-dd-ddd-dd-dd");
+            } else if (theLanguage == 'ge')
+            {
+                $("input[type=tel]").mask("+995 ddd dd-dd-dd");
+            } else if (theLanguage == 'es')
+            {
+                $("input[type=tel]").mask("+34 ddd dd dd dd");
+            } else if (theLanguage == 'pe')
+            {
+                $("input[type=tel]").mask("+51 ddd ddd ddd");
+            } else if (theLanguage == 'cl')
+            {
+                $("input[type=tel]").mask("+56 d dddd dddd");
+            } else if (theLanguage == 'ar')
+            {
+                $("input[type=tel]").mask("+54 dd dddd dddd");
+            } else if (theLanguage == 'co')
+            {
+                $("input[type=tel]").mask("+57 ddd ddd dddd");
+            } else if (theLanguage == 'mx')
+            {
+                $("input[type=tel]").mask("+52 dd dddd dddd");
+            } else if (theLanguage == 'it')
+            {
+                $("input[type=tel]").mask("+39 ddd-ddd-dddd");
+            } else if (theLanguage == 'esp')
+            {
+                $("input[type=tel]").mask("+34 ddd dd dd dd");
+            } else if (theLanguage == 'pt')
+            {
+                $("input[type=tel]").mask("+351 ddd ddd ddd");
+            } else if (theLanguage == 'prt')
+            {
+                $("input[type=tel]").mask("+351 ddd ddd ddd");
+            } else if (theLanguage == 'id')
+            {
+                $("input[type=tel]").mask("+62 ddd ddd ddd");
+            } else if (theLanguage == 'gr')
+            {
+                $("input[type=tel]").mask("+30 ddd ddddddd");
+            } else if (theLanguage == 'cy')
+            {
+                $("input[type=tel]").mask("+357 dd dddddd");
+            } else if (theLanguage == 'ro')
+            {
+                $("input[type=tel]").mask("+40 ddd ddd dd dd");
+            } else if (theLanguage == 'bg')
+            {
+                $("input[type=tel]").mask("dddd dd ddd d?d");
+            } else if (theLanguage == 'cz')
+            {
+                $("input[type=tel]").mask("+420 ddd ddd ddd");
+            } else if (theLanguage == 'sk')
+            {
+                $("input[type=tel]").mask("+421 ddd ddd ddd");
+            } else if (theLanguage == 'si')
+            {
+                $("input[type=tel]").mask("+386 d ddd dd dd");
+            } else if (theLanguage == 'pl')
+            {
+                $("input[type=tel]").mask("+48 ddd ddd ddd");
+            } else if (theLanguage == 'al')
+            {
+                $("input[type=tel]").mask("+355 dd ddd dddd");
+            } else if (theLanguage == 'rs')
+            {
+                $("input[type=tel]").mask("+381 dd ddddd-dd");
+            } else if (theLanguage == 'ph')
+            {
+                $("input[type=tel]").mask("+63 d dddd dd-dd");
+            } else if (theLanguage == 'hu')
+            {
+                $("input[type=tel]").mask("+36 d ddd dddd");
+            } else if (theLanguage == 'hr')
+            {
+                $("input[type=tel]").mask("+385 d dddd dd-dd");
+            } else if (theLanguage == 'ba')
+            {
+                $("input[type=tel]").mask("+387 dd dddddd");
+            }
+        });
+
+    </script>
+
+</body>
+</html>
